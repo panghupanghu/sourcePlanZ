@@ -4,4 +4,4 @@
 [《源计划网页版链接》](https://www.xapi.ltd/)
 ## 小程序版
 小程序名：sourcePlanZ
-<img src="https://web.xapi.ltd/gh_7f2c0998389b_258.jpg" align="center">
+<img src="https://web.xapi.ltd/gh_7f2c0998389b_258.jpg">
