@@ -1,0 +1,39 @@
+[ { "RuleInfoTitle":"HD韩剧专场"},
+  {
+    "bookSourceName": "HD韩剧专场",
+    "listStyle":"imgStyle",
+    "bookListType": 3,
+    "bookSourceUrl": "http://cq.qq.com/",
+    "searchUrl": "?t=search&k={{key}}&n={{(source.n!=key)?(source.n=key,'1'):(source.p)}}",
+    "ruleBookInfoTheme":{"hideDebug":true,"bar-BG":"#0f0f0f","bar-title":"#dee4e9","list-BG":"#0f0f0f","list":"linear-gradient(to bottom, #222222 80%, #2f2f2f)","name":"#d8d8d8","intro":"#81868e","lastChapter-border":"linear-gradient(270deg,#40b4fe,#3b63f5)","lastChapter":"#fff","wordCount":"#ff710b"},
+    "ruleTheme":{"hideGroup":true,"bar-BG":"#171717","bar-title":" #dee4e9","list-BG":"#0f0f0f"},
+    "exploreUrl": "[{'title':'新剧秒播','url':'?t=getVodList&v=8&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEBf4326a608025871cf99e045ed6d26c71?method=download&shareKey=44a9ab21b504200105a967daa24f62b5'},{'title':'甜蜜清新','url':'?t=getVodList&v=60&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEBdfba8274be062beb010e994f1b619ab7?method=download&shareKey=44a9ab21b504200105a967daa24f62b5'},{'title':'鬼怪来袭','url':'?t=getVodList&v=66&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEB1dbcf231b649b9d09391dee59cbdc7e4?method=download&shareKey=44a9ab21b504200105a967daa24f62b5'},{'title':'层层迷雾','url':'?t=getVodList&v=62&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEB800b119ea30dc1a4f26640d1ef544e2b?method=download&shareKey=44a9ab21b504200105a967daa24f62b5'},{'title':'经典必看','url':'?t=getVodList&v=65&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEB8285418eb182d6c60d50618b016e80b1?method=download&shareKey=44a9ab21b504200105a967daa24f62b5'},{'title':'家族那些事','url':'?t=getVodList&v=61&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEBa78017f9ada0581bdcaf32b18a0626ce?method=download&shareKey=44a9ab21b504200105a967daa24f62b5'},{'title':'宫廷之争','url':'?t=getVodList&v=64&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEBcc5fde89b87e93cf22431b4e571a674d?method=download&shareKey=44a9ab21b504200105a967daa24f62b5'},{'title':'劲爆动作','url':'?t=getVodList&v=63&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEB3a0413f4e73f76a7c201adb9d79dba14?method=download&shareKey=44a9ab21b504200105a967daa24f62b5'}]",
+    "ruleExplore": {
+        "bookList": "@js:if(book.resultJson.data.nextVal){source.p=book.resultJson.data.nextVal}book.resultJson.data.items",
+        "name": "$.vodName",
+        "bookUrl": "?t=detail&v={{$.vodId}}",
+        "intro": "$.flags",
+        "author": "",
+        "wordCount": "@js:let c={{$.score}};if(parseInt(c)){''+c}else{''}",
+        "lastChapter": "@js:$.iconList.length>0?$.iconList[0].iconText:''",
+        "coverUrl": "$.coverImg",
+        "kind": "",
+        "const": ""
+    },
+    "ruleToc": {
+      "chapterList": "@js:let f,c,d=chapter.resultJson.data.vodName+' ',p=[];chapter.resultJson.data.playerList.map(function(e,i){f=i % 2 === 0?{bg:'#b24e4e52',co:'#dd524dd6'}:{bg:'#0d83ca52',co:'#0d83cad6'};if(e.playerName.includes('一起看')){f.bg='linear-gradient(233deg,#e2bc81,#c8944e)';f.co='#ffffffe6';}e.playerName=e.playerName.replace('一起看APP','默认高速');c=chapter.resultJson.data.playerList.length>1?'<font style=\"margin-left:1em;color:'+f.co+';font-size:12px;padding:4px 8px;background:'+f.bg+';border-radius:4px\">'+e.playerName+'</font>':'';e.epList.map(function(i){p.push({u:i.epId,n:d+i.epName+c});});if(e.epList.length>200){chapter.resultJson.data.playerList.splice(1)}});p;",
+      "chapterName": "$.n",
+      "chapterUrl": "?t=getPlayUrl&e={{$.u}}",
+      "nextTocUrl": "",
+      "optionList": "",
+      "optionName": "",
+      "optionUrl": "",
+      "const": ""
+    },
+    "ruleContent": {
+        "contentList": "",
+        "content": "@player:{{$.data}}",
+        "nextContentUrl": ""
+    }
+  }
+]

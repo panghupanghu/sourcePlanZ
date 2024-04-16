@@ -1,0 +1,39 @@
+[ { "RuleInfoTitle":"电影专场"},
+  {
+    "bookSourceName": "电影专场",
+    "listStyle":"imgStyle",
+    "bookListType": 3,
+    "bookSourceUrl": "http://cq.qq.com/",
+    "searchUrl": "?t=search&k={{key}}&n={{(source.n!=key)?(source.n=key,'1'):(source.p)}}",
+    "ruleBookInfoTheme":{"hideDebug":true,"bar-BG":"#0f0f0f","bar-title":"#dee4e9","list-BG":"#0f0f0f","list":"linear-gradient(to bottom, #222222 80%, #2f2f2f)","name":"#d8d8d8","intro":"#81868e","lastChapter-border":"linear-gradient(270deg,#40b4fe,#3b63f5)","lastChapter":"#fff","wordCount":"#ff710b"},
+    "ruleTheme":{"hideGroup":true,"bar-BG":"#171717","bar-title":" #dee4e9","list-BG":"#0f0f0f"},
+    "exploreUrl": "[{'title':'2023年高分电影','url':'?t=getVodList&v=67&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEB94137fd56a6f209c104a68a5f77ede4b?method=download&shareKey=289a21c288b6a17c8c82e50672bd6577'},{'title':'院线上新','url':'?t=getVodList&v=3&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEB77ccb78fa65f01e4d1009367b862eaef?method=download&shareKey=289a21c288b6a17c8c82e50672bd6577'},{'title':'胆小误入','url':'?t=getVodList&v=6&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEB6eed89bdd0f950a80e0341820028d9e2?method=download&shareKey=289a21c288b6a17c8c82e50672bd6577'},{'title':'网络电影','url':'?t=getVodList&v=58&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEBc2bff8e063ddd28283cb77b8323eb845?method=download&shareKey=289a21c288b6a17c8c82e50672bd6577'},{'title':'科幻世界','url':'?t=getVodList&v=11&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEBe79cdc4d32120724a874629f3b556db2?method=download&shareKey=289a21c288b6a17c8c82e50672bd6577'},{'title':'历年票房冠军','url':'?t=getVodList&v=25&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEB51553b96ea7eedaf2b76475cd44f1607?method=download&shareKey=289a21c288b6a17c8c82e50672bd6577'},{'title':'近10年韩国高分电影','url':'?t=getVodList&v=48&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEB620a4d85a50925979656f06de70d8d1f?method=download&shareKey=289a21c288b6a17c8c82e50672bd6577'},{'title':'热门犯罪电影','url':'?t=getVodList&v=13&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEB942c7b330dbaf45cd432d49fb05a06d0?method=download&shareKey=289a21c288b6a17c8c82e50672bd6577'},{'title':'“密室”大逃亡','url':'?t=getVodList&v=27&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEBc968744a795e10926bc8f2895359067b?method=download&shareKey=289a21c288b6a17c8c82e50672bd6577'},{'title':'恐怖大师“温子仁”','url':'?t=getVodList&v=26&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEB37d7426ae4b8b73455953df6be41f3a3?method=download&shareKey=289a21c288b6a17c8c82e50672bd6577'},{'title':'港片名导','url':'?t=getVodList&v=57&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEBb6d65a3c8d57fdc8fce50d5c68bca9c5?method=download&shareKey=289a21c288b6a17c8c82e50672bd6577'},{'title':'周星驰全系列','url':'?t=getVodList&v=21&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEBa335162f939c3a945d0994951be5701c?method=download&shareKey=289a21c288b6a17c8c82e50672bd6577'},{'title':'豆瓣电影TOP250','url':'?t=getVodList&v=51&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEB5f8eca6b44eef8ec1131996aeb5db31c?method=download&shareKey=289a21c288b6a17c8c82e50672bd6577'},{'title':'林正英僵尸片','url':'?t=getVodList&v=12&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEB086f8a9eef264a04870e29010998b27f?method=download&shareKey=289a21c288b6a17c8c82e50672bd6577'}]",
+    "ruleExplore": {
+        "bookList": "@js:if(book.resultJson.data.nextVal){source.p=book.resultJson.data.nextVal}book.resultJson.data.items",
+        "name": "$.vodName",
+        "bookUrl": "?t=detail&v={{$.vodId}}",
+        "intro": "$.flags",
+        "author": "",
+        "wordCount": "@js:let c={{$.score}};if(parseInt(c)){''+c}else{''}",
+        "lastChapter": "@js:$.iconList.length>0?$.iconList[0].iconText:''",
+        "coverUrl": "$.coverImg",
+        "kind": "",
+        "const": ""
+    },
+    "ruleToc": {
+      "chapterList": "@js:let f,c,d=chapter.resultJson.data.vodName+' ',p=[];chapter.resultJson.data.playerList.map(function(e,i){f=i % 2 === 0?{bg:'#b24e4e52',co:'#dd524dd6'}:{bg:'#0d83ca52',co:'#0d83cad6'};if(e.playerName.includes('一起看')){f.bg='linear-gradient(233deg,#e2bc81,#c8944e)';f.co='#ffffffe6';}e.playerName=e.playerName.replace('一起看APP','默认高速');c=chapter.resultJson.data.playerList.length>1?'<font style=\"margin-left:1em;color:'+f.co+';font-size:12px;padding:4px 8px;background:'+f.bg+';border-radius:4px\">'+e.playerName+'</font>':'';e.epList.map(function(i){p.push({u:i.epId,n:d+i.epName+c});});if(e.epList.length>200){chapter.resultJson.data.playerList.splice(1)}});p;",
+      "chapterName": "$.n",
+      "chapterUrl": "?t=getPlayUrl&e={{$.u}}",
+      "nextTocUrl": "",
+      "optionList": "",
+      "optionName": "",
+      "optionUrl": "",
+      "const": ""
+    },
+    "ruleContent": {
+        "contentList": "",
+        "content": "@player:{{$.data}}",
+        "nextContentUrl": ""
+    }
+  }
+]

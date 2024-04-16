@@ -1,0 +1,52 @@
+[ {
+   "RuleInfoTitle":"电视剧排行榜",
+   "RuleInfoPic":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAABF9JREFUeF7tm11IFFEUx8/spriKuhtkxC61mxJqSmWCj2klBL1pQVCQQj3mQ0TZZmRQYtBLPkaRPYRFKfUU0YdbbxnWg0sLoexErkEFuyiCaLsTZ9rZZmZ3dmf23pmddrwgIzpz7/3/7jln7sccBnKUkLff+3uDrYfhYBsA5wVgvACAP2YrrKhDAQB4yzE2tnn2Gv6uWBil/8zU+QcZDk6aVKwW+CzHwP3m2aHBTA+lAcARj9ttk0UgXK6XtccTHQ3ssNhSQAJgpm6gneESKL5YS5o1pABYQLwwqCzH2HqF2JACEKy9OAnAtBfr0Mt0sU1zQz78Gw8gWOvvAYB7FhEvyOxtmhsaFQCEizDo5RpP3goYC/l+GhCOsXUwFjV/HgbHwFUEgL6PMcCChQsgACv6f+qVuA4gWOvnjLb9Eo8LSt1OwCuWtfkorEZi/NXgwqIF6A4Ahbq6WqDE7QRnd4uiRgSw/D4My1NhiI1/NISF7gBq+g7Apr79msUgjNjEJ/gx8lrzs1oe0A1ARZsPvA9OaelLxnsRROTCOG8ZehRdAKCZu290U+uvntZAHUC+Jq+G1s+RN9RdgioAWmafDQa6A80ASQ0ARvodgXNqBpLoHnSH8Im71F6Z1ABgwEMLMKJgQGSP36HSFBUARpi+XC0CoPFmoAIAI362CQ6VoZJVQssKqADYOXtdD41Z68RY8KX9JnG7xABov/O1KKLhBsQACmH+AiQabkAMwMjoL7cOUwDAd7+wrNVivjTupREHiC3A8gAK6QKmsIBCAsA1Aa4NSAqxC1geQCGmwcKI01gZEluAUavATGaOM0HSjVRiANixQrgBDf/HvlMBUAg3oDENpgbAaCugMQMUXIqKBWBl5a1e8D08TfJGUv0srdGnZgFlDVugsrMB8FrV2ahaSD430hRPBQD6f7loK6yibbtuW2Om2xV24nGXx5k2kHpA0EM8kQUoiU/RiCfAdbSVeKVoypOhXOJXQt9h6WWIF4+HovmcDSJI8ajbK8tgc/8hcOzeCtzKKiy++Ay/br/LJ4xIntH8FkBRzq49ig2vzccgNiE92cVnMFYguFxb50rHYJ5bx6D6cLOk3cj5J/wBKknRDAAbkwc+oQOZxMs7J2yeCCBK3S5YjUT5KW22be766QGwVzsk1UUffYCFS09J9Oc3E7RXlUHlwUZJAFQjnqSn9VN+sG+skAIYm4KFy89Iqs0PALYohqC3eGzPPdwFziN7JWK/nRmDxefBwgAQINiqHMQrMrUKas52gmOXB7iVNVh6FYLo42m1jyrel1cMIG7VRBWsA1j/TtBan8nLnI//UtRSeQLy6DPKJJOjrpgoLhnZlV5Lfy5vjyd8yYQJS7rB34QJtDeL5gz8S5kp4lxBpXgiTZrCu5IQ9Pke1ciwpqItTJVJS5uziiuIxaNmS6XOihMmBUPJmDyddAdMosT5gRkzxVUYeuoWbcnT8ppFMPb9T+nzHANfAWyBXOnzfwCmEy5BYIjfjQAAAABJRU5ErkJggg=="
+  },
+  {
+    "bookSourceName": "爱奇艺电视剧榜",
+    "listStyle":"imgStyle",
+    "bookSourceUrl": "https://mesh.if.iqiyi.com/",
+    "ruleBookInfoTheme":{"hideDebug":true,"bar-title":"#FFFFFFE6","list-BG":"linear-gradient(to left, #5d4a31, #0f3810, #14161a)","name":"#FFFFFFE6","author":"#FFFFFFE6","intro":"#FFFFFF66","list-scroll":"#fcfcfc","lastChapter":"rgba(0,204,76,.9)","lastChapter-border":"#14161a00"},
+    "ruleTheme":{"hideGroup":true,"randBoxColor":true,"bar-BG":"linear-gradient(to left, #5d4a31, #2a0f38, #191a20)","bar-title":" #FFFFFFAD","list-BG":"linear-gradient(to right, #5d4a31, #2a0f38, #191a20)"},
+    "exploreUrl": "[{'title': '热播榜','url': 'portal/pcw/rankList/comSecRankList?v=1&device=&auth=&uid=&ip=&refresh=0&server=false&page_st=0&tag=0&category_id=2&date=&pg_num={{page}}','img':'http://pic7.iqiyipic.com/image/20240301/3f/45/a_100535315_m_601_m18_480_270.webp'},{'title': '飙升榜','url': 'portal/pcw/rankList/comSecRankList?v=1&device=&auth=&uid=&ip=&refresh=0&server=false&page_st=-1&tag=-1&category_id=2&date=&pg_num={{page}}','img':'http://pic0.iqiyipic.com/image/20240311/08/cf/a_100567632_m_601_m6_480_270.webp'},{'title': '必看榜','url': 'portal/pcw/rankList/comSecRankList?v=1&device=&auth=&uid=&ip=&refresh=0&server=false&page_st=-6&tag=-6&category_id=2&date=&pg_num={{page}}','img':'http://pic0.iqiyipic.com/image/20231113/8b/04/a_100476174_m_601_m44_480_270.webp'},{'title': '高分榜','url': 'portal/pcw/rankList/comSecRankList?v=1&device=&auth=&uid=&ip=&refresh=0&server=false&page_st=-4&tag=-4&category_id=2&date=&pg_num={{page}}','img':'http://pic1.iqiyipic.com/image/20231109/cc/ed/a_100142164_m_601_m25_480_270.webp'},{'title': '悬疑榜','url': 'portal/pcw/rankList/comSecRankList?v=1&device=&auth=&uid=&ip=&refresh=0&server=false&page_st=5836257895783433&tag=5836257895783433&category_id=2&date=&pg_num={{page}}','img':'http://pic8.iqiyipic.com/image/20240108/4d/91/a_100545221_m_601_m25_480_270.webp'}]",
+    "ruleExplore": {
+        "bookList": "$.data.items[0].contents[*]",
+        "name": "$.title",
+        "bookUrl": "@js:let c='{{$.title}}';c=/\\d/.test(c)?c.split('：')[0].split(':')[0]:c;c=/《([^》]+)》/.test(c)?c.match(/《([^》]+)》/)[1]:c;'https://api.1080zyku.com/inc/apijson.php?ac=videolist&wd='+c.replace(/\\([^)]*\\)/g, '').replace(/（[^)]*）/g, '')+'&pg=1'",
+        "intro": "$.desc",
+        "author": "$.tags",
+        "wordCount": "",
+        "lastChapter": "@js:let d,c={{$.indexType}};switch(c){case 1:d='实时热度';break;case 2:d='飙升幅度';break;case 3:d='评分';break;case 5:d='最高热度';break;default:d='热度'} d+'：'+{{$.mainIndex}}",
+        "coverUrl": "$.img",
+        "kind": "$.recIndex",
+        "const": ""
+    },
+    "ruleToc": {
+        "chapterList": "@js:let a=[],b,c,f,d=chapter.resultJson.list;d.map(function(e){if(e.type_id<5||(e.type_id>11&&e.type_id<19)||e.type_id==54){f=e.vod_name;c=e.vod_play_url;c= c.includes('$$$') ? c.split('$$$')[1] : c.split('$$$')[0];c=c.split('#');c.map(function(i){b=i.split('$');a.push({x:f+' '+b[0],m:b[1]});});}});if(a.length==0){f=chapter.resultJson.list[0].vod_name;d=chapter.resultJson.list[0].vod_play_url;d= d.includes('$$$') ? d.split('$$$')[1] : d.split('$$$')[0];d=d.split('#');a=[];d.map(function(i){b=i.split('$');a.push({x:f+' '+b[0],m:b[1]});})}a;",
+        "chapterName": "$.x",
+        "chapterUrl": "@player:{{$.m}}",
+        "nextTocUrl": "",
+        "optionList": "",
+        "optionName": "",
+        "optionUrl": "",
+        "const": ""
+    },
+    "ruleContent": {
+        "contentList": "",
+        "content": "@jumpUrl",
+        "nextContentUrl": ""
+    },
+    "ruleSearch": {
+        "bookList": "",
+        "name": "",
+        "bookUrl": "",
+        "intro": "",
+        "author": "",
+        "wordCount": "",
+        "lastChapter": "",
+        "coverUrl": "",
+        "kind": "",
+        "const": ""
+    }
+  }
+]
