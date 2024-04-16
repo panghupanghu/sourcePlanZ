@@ -1,0 +1,195 @@
+[ {
+    "RuleInfoTitle":"阅友文化",
+    "RuleInfoPic":"https://img.32r.com/logo/220516/202205161118272572.png"
+  },
+  {
+    "bookSourceGroup": "短剧",
+    "bookSourceName": "青橙短剧",
+    "bookListType": 1,
+    "searchUrl": "?s=getMovieByKeyword&keyword={{key}}&page={{page}}",
+    "ruleBookInfoTheme":{"hideBarImg":true,"hideIcon":true,"showNormalPic":true,"hideDebug":true,"bar-BG":"linear-gradient(180deg, #ECF4F9 0%, rgba(236, 244, 249, 0) 100%)","list-BG":"#f7f7f7","name":"#3d3d3d","author":"#ff5f00","intro":"#868686","lastChapter":"#9b6de9","lastChapter-border":"#14161a"},
+    "bookSourceUrl": "https://goway.tjshuchen.com/",
+    "exploreUrl": "[{'title':'全部热播','url':'?s=getMovieList&page={{page}}','style':{'layout_flexBasisPercent':1,'layout_flexGrow':2}}]",
+    "ruleExplore": {
+        "bookList": "$.data[*]",
+        "name": "$.displayName",
+        "bookUrl": "?s=getInfo&movieId={{$.movieId}}",
+        "intro": "$.recommend",
+        "author": "共{{$.totalCnt}}集",
+        "wordCount": "",
+        "lastChapter": "@js:let c='{{$.iconId}}';if(c=='2'){'新剧'}else if(c=='1'){'最热'}else if(c=='4'){'推荐'}else if(c=='3'){'热播'}",
+        "coverUrl": "$.imgUrl",
+        "kind": "@js:'{{$.tag}}'.split(',')[0]",
+        "const": ""
+    },
+    "ruleToc": {
+        "chapterList": "$.data.list[*]",
+        "chapterName": "$.name",
+        "chapterUrl": "@js:'@player:'+CryptoJS.DES.decrypt('{{$.url}}',CryptoJS.enc.Utf8.parse('jdg%9%Nb'),{mode:CryptoJS.mode.ECB,padding:CryptoJS.pad.Pkcs7}).toString(CryptoJS.enc.Utf8);",
+        "nextTocUrl": "",
+        "optionList": "",
+        "optionName": "",
+        "optionUrl": "",
+        "const": ""
+    },
+    "ruleContent": {
+        "contentList": "",
+        "content": "@jumpUrl",
+        "nextContentUrl": ""
+    },
+    "ruleSearch": {
+        "bookList": "$.data.list[*]",
+        "name": "$.movieName",
+        "bookUrl": "?s=getInfo&movieId={{$.movieId}}",
+        "intro": "$.recommend",
+        "author": "",
+        "wordCount": "",
+        "lastChapter": "",
+        "coverUrl": "$.imgUrl",
+        "kind": "$.tag",
+        "const": ""
+    }
+  },
+  {
+    "bookSourceGroup": "小说",
+    "bookSourceName": "阅友小说",
+    "bookSourceUrl": "https://yy-goway.tjshuchen.com/",
+    "exploreUrl": "[{'title':'男生','url':'','style':{'layout_flexBasisPercent':1,'layout_flexGrow':2}},{'title':'都市人生','url':'?s=classifySearch&classifySecondList=1100&page={{page}}','style':{'layout_flexBasisPercent':3,'layout_flexGrow':2}},{'title':'玄幻奇幻','url':'?s=classifySearch&classifySecondList=1101&page={{page}}','style':{'layout_flexBasisPercent':3,'layout_flexGrow':2}},{'title':'武侠仙侠','url':'?s=classifySearch&classifySecondList=1102&page={{page}}','style':{'layout_flexBasisPercent':3,'layout_flexGrow':2}},{'title':'军事历史','url':'?s=classifySearch&classifySecondList=1103&page={{page}}','style':{'layout_flexBasisPercent':3,'layout_flexGrow':2}},{'title':'科幻末世','url':'?s=classifySearch&classifySecondList=1104&page={{page}}','style':{'layout_flexBasisPercent':3,'layout_flexGrow':2}},{'title':'游戏体育','url':'?s=classifySearch&classifySecondList=1105&page={{page}}','style':{'layout_flexBasisPercent':3,'layout_flexGrow':2}},{'title':'悬疑灵异','url':'?s=classifySearch&classifySecondList=1107&page={{page}}','style':{'layout_flexBasisPercent':3,'layout_flexGrow':2}},{'title':'脑洞大开','url':'?s=classifySearch&classifySecondList=1108&page={{page}}','style':{'layout_flexBasisPercent':3,'layout_flexGrow':2}},{'title':'女生','url':'','style':{'layout_flexBasisPercent':1,'layout_flexGrow':2}},{'title':'现代言情','url':'?s=classifySearch&classifySecondList=2100&page={{page}}','style':{'layout_flexBasisPercent':3,'layout_flexGrow':2}},{'title':'古代言情','url':'?s=classifySearch&classifySecondList=2101&page={{page}}','style':{'layout_flexBasisPercent':3,'layout_flexGrow':2}},{'title':'幻想言情','url':'?s=classifySearch&classifySecondList=2102&page={{page}}','style':{'layout_flexBasisPercent':3,'layout_flexGrow':2}},{'title':'穿越时空','url':'?s=classifySearch&classifySecondList=2104&page={{page}}','style':{'layout_flexBasisPercent':3,'layout_flexGrow':2}},{'title':'宫闱争斗','url':'?s=classifySearch&classifySecondList=2105&page={{page}}','style':{'layout_flexBasisPercent':3,'layout_flexGrow':2}},{'title':'豪门总裁','url':'?s=classifySearch&classifySecondList=2106&page={{page}}','style':{'layout_flexBasisPercent':3,'layout_flexGrow':2}},{'title':'婚恋爱情','url':'?s=classifySearch&classifySecondList=2107&page={{page}}','style':{'layout_flexBasisPercent':3,'layout_flexGrow':2}},{'title':'经商种田','url':'?s=classifySearch&classifySecondList=2108&page={{page}}','style':{'layout_flexBasisPercent':3,'layout_flexGrow':2}}]",
+    "searchUrl": "?s=getBookByKeyword&keyword={{key}}&page={{page}}",
+    "ruleBookInfoTheme":{"hideBarImg":true,"hideIcon":true,"hideDebug":true,"bar-BG":"#EB5050","bar-title":"#fff","list-BG":"#fff","name":"#0f0f0f","author":"#999","intro":"#666","lastChapter":"#EB5050","lastChapter-border":"#EB5050","wordCount":"#EB5050","wordCount-border":"#EB5050"},
+    "ruleExplore": {
+      "bookList": "$.data.list[*]",
+      "name": "$.bookName",
+      "bookUrl": "?s=chapterList&bookId={{$.id}}",
+      "intro": "$.intro",
+      "author": "$.authorName",
+      "wordCount": "$.wordsDesc",
+      "lastChapter": "$.latestChapterName",
+      "coverUrl": "$.bookPic",
+      "kind": "$.classifyOrTag",
+      "const": "$.id"
+  },
+  "ruleToc": {
+      "chapterList": "$.data[*]",
+      "chapterName": "$.chapterName",
+      "chapterUrl": "?s=downloadChapter&bookId={{bookConstStr}}&chapterId={{$.chapterId}}",
+      "nextTocUrl": "",
+      "optionList": "",
+      "optionName": "",
+      "optionUrl": "",
+      "const": ""
+  },
+  "ruleContent": {
+      "contentList": "",
+      "content": "$.data.contentUrl",
+      "nextContentUrl": ""
+  },
+  "ruleSearch": {
+    "bookList": "$.data.list[*]",
+    "name": "$.bookName",
+    "bookUrl": "?s=getChapterList&bookId={{$.id}}",
+    "intro": "$.intro",
+    "author": "$.authorName",
+    "wordCount": "$.wordsDesc",
+    "lastChapter": "",
+    "coverUrl": "$.bookPic",
+    "kind": "",
+    "const": "$.id"
+   }
+  },
+  {
+    "bookSourceGroup": "小说",
+    "bookSourceName": "一番小说[解锁VIP]",
+    "bookSourceUrl": "https://hw-goway.tjshuchen.com/",
+    "exploreUrl": "[{'title':'男生','url':'','style':{'layout_flexBasisPercent':1,'layout_flexGrow':2}},{'title':'都市人生','url':'?s=v352search&classifySecondList=1100&page={{page}}','style':{'layout_flexBasisPercent':3,'layout_flexGrow':2}},{'title':'玄幻奇幻','url':'?s=v352search&classifySecondList=1101&page={{page}}','style':{'layout_flexBasisPercent':3,'layout_flexGrow':2}},{'title':'武侠仙侠','url':'?s=v352search&classifySecondList=1102&page={{page}}','style':{'layout_flexBasisPercent':3,'layout_flexGrow':2}},{'title':'军事历史','url':'?s=v352search&classifySecondList=1103&page={{page}}','style':{'layout_flexBasisPercent':3,'layout_flexGrow':2}},{'title':'科幻末世','url':'?s=v352search&classifySecondList=1104&page={{page}}','style':{'layout_flexBasisPercent':3,'layout_flexGrow':2}},{'title':'游戏体育','url':'?s=v352search&classifySecondList=1105&page={{page}}','style':{'layout_flexBasisPercent':3,'layout_flexGrow':2}},{'title':'悬疑灵异','url':'?s=v352search&classifySecondList=1107&page={{page}}','style':{'layout_flexBasisPercent':3,'layout_flexGrow':2}},{'title':'脑洞大开','url':'?s=v352search&classifySecondList=1108&page={{page}}','style':{'layout_flexBasisPercent':3,'layout_flexGrow':2}},{'title':'女生','url':'','style':{'layout_flexBasisPercent':1,'layout_flexGrow':2}},{'title':'现代言情','url':'?s=v352search&classifySecondList=2100&page={{page}}','style':{'layout_flexBasisPercent':3,'layout_flexGrow':2}},{'title':'古代言情','url':'?s=v352search&classifySecondList=2101&page={{page}}','style':{'layout_flexBasisPercent':3,'layout_flexGrow':2}},{'title':'幻想言情','url':'?s=v352search&classifySecondList=2102&page={{page}}','style':{'layout_flexBasisPercent':3,'layout_flexGrow':2}},{'title':'穿越时空','url':'?s=v352search&classifySecondList=2104&page={{page}}','style':{'layout_flexBasisPercent':3,'layout_flexGrow':2}},{'title':'宫闱争斗','url':'?s=v352search&classifySecondList=2105&page={{page}}','style':{'layout_flexBasisPercent':3,'layout_flexGrow':2}},{'title':'豪门总裁','url':'?s=v352search&classifySecondList=2106&page={{page}}','style':{'layout_flexBasisPercent':3,'layout_flexGrow':2}},{'title':'婚恋爱情','url':'?s=v352search&classifySecondList=2107&page={{page}}','style':{'layout_flexBasisPercent':3,'layout_flexGrow':2}},{'title':'经商种田','url':'?s=v352search&classifySecondList=2108&page={{page}}','style':{'layout_flexBasisPercent':3,'layout_flexGrow':2}}]",
+    "searchUrl": "?s=v4getBookByKeyword&keyword={{key}}&page={{page}}",
+    "ruleBookInfoTheme":{"hideBarImg":true,"hideIcon":true,"hideDebug":true,"bar-BG":"#8CB883","bar-title":"#fff","list-BG":"#fff","name":"#0f0f0f","author":"#999","intro":"#666","lastChapter":"#8CB883","lastChapter-border":"#8CB883","wordCount":"#8CB883","wordCount-border":"#8CB883"},
+    "ruleExplore": {
+      "bookList": "$.data.list[*]",
+      "name": "$.bookName",
+      "bookUrl": "?s=getChapterList&bookId={{$.id}}",
+      "intro": "$.intro",
+      "author": "$.authorName",
+      "wordCount": "$.wordsDesc",
+      "lastChapter": "$.latestChapterName",
+      "coverUrl": "$.bookPic",
+      "kind": "$.classifyOrTag",
+      "const": "$.id"
+  },
+  "ruleToc": {
+      "chapterList": "$.data[*]",
+      "chapterName": "$.chapterName",
+      "chapterUrl": "?s=downloadChapter&bookId={{bookConstStr}}&chapterId={{$.chapterId}}",
+      "nextTocUrl": "",
+      "optionList": "",
+      "optionName": "",
+      "optionUrl": "",
+      "const": ""
+  },
+  "ruleContent": {
+      "contentList": "",
+      "content": "$.data.contentUrl",
+      "nextContentUrl": ""
+  },
+  "ruleSearch": {
+    "bookList": "$.data.list[*]",
+    "name": "$.bookName",
+    "bookUrl": "?s=getChapterList&bookId={{$.id}}",
+    "intro": "$.intro",
+    "author": "$.authorName",
+    "wordCount": "$.wordsDesc",
+    "lastChapter": "",
+    "coverUrl": "$.bookPic",
+    "kind": "",
+    "const": "$.id"
+   }
+  },
+  {
+    "bookSourceGroup": "小说",
+    "bookSourceName": "喵爪小说",
+    "bookListType": 1,
+    "bookSourceUrl": "https://mz-goway.tjshuchen.com/",
+    "exploreUrl": "[{'title':'男生','url':'','style':{'layout_flexBasisPercent':1,'layout_flexGrow':2}},{'title':'推荐榜','url':'?s=searchBook&rankId=349&page={{page}}','style':{'layout_flexBasisPercent':2,'layout_flexGrow':2}},{'title':'热度榜','url':'?s=searchBook&rankId=326&page={{page}}','style':{'layout_flexBasisPercent':2,'layout_flexGrow':2}},{'title':'完本榜','url':'?s=searchBook&rankId=325&page={{page}}','style':{'layout_flexBasisPercent':2,'layout_flexGrow':2}},{'title':'TOP榜','url':'?s=searchBook&rankId=327&page={{page}}','style':{'layout_flexBasisPercent':2,'layout_flexGrow':2}},{'title':'女生','url':'','style':{'layout_flexBasisPercent':1,'layout_flexGrow':2}},{'title':'推荐榜','url':'?s=searchBook&rankId=350&page={{page}}','style':{'layout_flexBasisPercent':2,'layout_flexGrow':2}},{'title':'热度榜','url':'?s=searchBook&rankId=329&page={{page}}','style':{'layout_flexBasisPercent':2,'layout_flexGrow':2}},{'title':'完本榜','url':'?s=searchBook&rankId=330&page={{page}}','style':{'layout_flexBasisPercent':2,'layout_flexGrow':2}},{'title':'TOP榜','url':'?s=searchBook&rankId=328&page={{page}}','style':{'layout_flexBasisPercent':2,'layout_flexGrow':2}}]",
+    "searchUrl": "?s=getBookByKeyword&keyword={{key}}&page={{page}}",
+    "ruleBookInfoTheme":{"hideBarImg":true,"hideIcon":true,"showNormalPic":true,"hideDebug":true,"bar-BG":"#FE5E7B","bar-title":"#FFF7E8","list-BG":"#fff","name":"#0f0f0f","author":"#666","intro":"#999","lastChapter":"#5490ff","kind":"#FE5E7B","kind-BG":"#FE5E7B1C"},
+    "ruleExplore": {
+      "bookList": "$.data[*]",
+      "name": "$.bookName",
+      "bookUrl": "?s=chapterList&bookId={{$.bookId}}",
+      "intro": "$.introOrRec",
+      "author": "$.authorName",
+      "wordCount": "$.wordsDesc",
+      "lastChapter": "@js:{{$.fullFlag}}?'连载':'完结'",
+      "coverUrl": "$.bookPic",
+      "kind": "$.classifyOrTag",
+      "const": "$.bookId"
+  },
+  "ruleToc": {
+      "chapterList": "$.data[*]",
+      "chapterName": "$.chapterName",
+      "chapterUrl": "?s=downloadChapter&bookId={{bookConstStr}}&chapterId={{$.chapterId}}",
+      "nextTocUrl": "",
+      "optionList": "",
+      "optionName": "",
+      "optionUrl": "",
+      "const": ""
+  },
+  "ruleContent": {
+      "contentList": "",
+      "content": "$.data.contentUrl",
+      "nextContentUrl": ""
+  },
+  "ruleSearch": {
+    "bookList": "$.data.list[*]",
+    "name": "$.bookName",
+    "bookUrl": "?s=getChapterList&bookId={{$.id}}",
+    "intro": "$.intro",
+    "author": "$.authorName",
+    "wordCount": "$.wordsDesc",
+    "lastChapter": "",
+    "coverUrl": "$.bookPic",
+    "kind": "",
+    "const": "$.id"
+   }
+  },
+]
