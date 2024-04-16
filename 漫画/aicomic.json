@@ -1,0 +1,41 @@
+[ {
+    "RuleInfoTitle":"aicomic",
+    "RuleInfoPic":"https://aicomic.org/template/wap/default/img/pic_home_footimg.png"
+  },
+  {
+    "bookSourceGroup": "18",
+    "bookSourceName": "aicomic",
+    "bookListType": 3,
+    "searchUrl": "index.php/search/{{key}}/{{page}}",
+    "ruleBookInfoTheme":{"bar-BG":"#6bb3c0","bar-title":"#fff","list-BG":"#fff","name":"#252525","intro":"#999"},
+    "bookSourceUrl": "https://aicomic.org/",
+    "exploreUrl": "@js:let d=[{'t':'冒险','l':'1'},{'t':'魔幻','l':'2'},{'t':'搞笑','l':'3'},{'t':'萌系','l':'4'},{'t':'爱情','l':'5'},{'t':'神鬼','l':'6'},{'t':'热血','l':'7'},{'t':'日文同人','l':'8'},{'t':'美食','l':'9'},{'t':'科幻','l':'11'},{'t':'格斗','l':'13'},{'t':'武侠','l':'14'},{'t':'战争','l':'16'},{'t':'竞技','l':'17'},{'t':'校园','l':'18'},{'t':'生活','l':'22'},{'t':'历史','l':'24'},{'t':'宅男','l':'25'},{'t':'伪娘','l':'26'},{'t':'耽美','l':'28'},{'t':'百合','l':'29'},{'t':'后宫','l':'30'},{'t':'治愈','l':'31'},{'t':'悬疑','l':'33'},{'t':'恐怖','l':'34'},{'t':'四格','l':'35'},{'t':'音乐','l':'38'},{'t':'杂志','l':'40'},{'t':'黑道','l':'41'},{'t':'中文同人','l':'42'},{'t':'中文成年','l':'43'},{'t':'日文成年','l':'44'},{'t':'Cosplay','l':'51'}];d=d.map(i=>{i={title:i.t,url:'/index.php/category/list/'+i.l+'/page/{{page}}',style:{layout_flexGrow:2,layout_flexBasisPercent:4},};return i});JSON.stringify(d);",
+    "ruleExplore": {
+        "bookList": ".cate-comic-list.clearfix .common-comic-item",
+        "name": ".comic__title a",
+        "bookUrl": ".comic__title a@href",
+        "intro": ".comic-feature",
+        "author": "",
+        "wordCount": "",
+        "lastChapter": "",
+        "coverUrl": "img@data-original",
+        "kind": ".comic-update a",
+        "const": ""
+    },
+    "ruleToc": {
+        "chapterList": ".chapter__list-box.clearfix li",
+        "chapterName": "a",
+        "chapterUrl": "a@href",
+        "nextTocUrl": "",
+        "optionList": "",
+        "optionName": "",
+        "optionUrl": "",
+        "const": ""
+    },
+    "ruleContent": {
+        "contentList": ".rd-article-wr.clearfix .rd-article__pic",
+        "content": "<img data-lazyload='{{img@data-original}}'>",
+        "nextContentUrl": ""
+    }
+  }
+]
