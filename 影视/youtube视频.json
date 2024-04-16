@@ -1,0 +1,74 @@
+[ {
+  "RuleInfoTitle":"youtube",
+  "RuleInfoPic":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAnJJREFUeF7tmvFVAyEMxj8mUSfRTqJOYjuJdRLrJNZJzn4IbY62xz1fCbwL9589PMgvCSQhDsYfZ1x+dADdAowT6C5g3AD6JthdoLvADQgMwH3ymfRv+Xrq3T6znNF7B+TGZ6WbdIEBeAHwGL7ChcvFTwmSnbjAgAhDQvkCsAOwvwbrDEDQ5tvhnyj8kp4tgE0KYgRgAJ4OGv9cktSJLLSOlYRwBBA0/71g4aVoDxGCBEDN0wIsPDsHrCioB2BM+1HB3goigPWBAzc+S8/WAa8RwGBJ8iirA5wzav4nNwjBzrtFCwBd4GD7Fv0/6ts8gC0tgOa/tLB3rkd7AFoBEGPxHwDPSVI1d7Elxu1UAfDcbSzZ8gAY/2uktj7wiGoMiRfdT2Pua9azrwZAgOD+wyi0BggPQCsKHFlAqpKwGTMZUwXRDICQlBEArUEtK20KQA23aBKAAMFNsqhbNA1A1CoiiJvHAs0DENZQJGBrHkDIVosdk80CCIFS8ROhSQCaCVpTAGrUJqqHwiIAqpEX1M0FQmZY7IibcWbWA6Dp5xMgPIAi5+uFSX0y1FgRVrUgwmtqPmqJzgwX8ADM1wQtA9jQAliRsXoxYh4AmyV8TUyrLDZjX9Ib4i9HAwCtyrCedPmZ2BvAHgGvfov3g2yYWssOEQZEqhXZvJKKjjh1iBi0Aq99yp22yVnYC44NUmcAgiUsOTAaCX8RgMjPeYtbtCRd1MPHH+fN9If7a5sdPdl2+ZCzxz5huUnehS9d2jj/2ywtF3etEVr+no7h9bv8jRqfbKjOAlDUUpWpOoAq2BuatFtAQ8qospRuAVWwNzSpeQv4BaB3um/TWDnHAAAAAElFTkSuQmCC"
+ },
+  {
+    "bookSourceName": "综合视频",
+    "bookSourceUrl": "https://bscdn.huolient.com/",
+    "bookListType": 2,
+    "ruleBookInfoTheme":{"hideBarImg":true,"hideIcon":true,"showNormalPic":true,"bar-title":"#fff","hideDebug":true,"bar-BG":"#e03021","list-BG":"#f1f1f1","name":"#000000DF","intro":"#00000080","lastChapter":"#ffffff","lastChapter-border":"#333"},
+    "searchUrl": "{{let c='';if(page==1){source.itct=source.token=source.id_token=source.variants_checksum=source.xsrf_token='';c='?s=search&k='+key;}else{c='?s=searchNext&k='+key+'&itct='+source.itct+'&token='+source.token+'&id_token='+source.id_token+'&variants_checksum='+source.variants_checksum+'&xsrf_token='+source.xsrf_token}c;}}",
+    "exploreUrl": "[{\"title\": \"主播热舞\",\"url\": \"?s=getList&t=1&p={{page}}\",\"style\": {\"layout_flexGrow\": 2, \"layout_flexBasisPercent\": 2}},{\"title\": \"最新收藏\",\"url\": \"?s=getList&t=2&p={{page}}\",\"style\": {\"layout_flexGrow\": 2, \"layout_flexBasisPercent\": 2}},{\"title\": \"最新播放\",\"url\": \"?s=getList&t=3&p={{page}}\",\"style\": {\"layout_flexGrow\": 2, \"layout_flexBasisPercent\": 2}},{\"title\": \"最新下载\",\"url\": \"?s=getList&t=4&p={{page}}\",\"style\": {\"layout_flexGrow\": 2, \"layout_flexBasisPercent\": 2}}]",
+    "ruleExplore": {
+        "bookList": "@js:let data=book.resultJson.data; if(('params' in data)&&('xsrf_token' in data.params)){source.itct=data.params.itct,source.id_token=data.params.id_token,source.variants_checksum=data.params.variants_checksum,source.token=data.params.token,source.xsrf_token=data.params.xsrf_token}data.list;",
+        "name": "$.title",
+        "bookUrl": "?s=getHost&v={{$.video_id}}",
+        "intro": "$.length",
+        "author": "",
+        "wordCount": "",
+        "lastChapter": "$.time",
+        "coverUrl": "$.pic",
+        "kind": "",
+        "const": ""
+    },
+    "ruleToc": {
+        "chapterList": "$.data[*]",
+        "chapterName": "$.title",
+        "chapterUrl": "@player:{{$.host}}",
+        "nextTocUrl": "",
+        "optionList": "",
+        "optionName": "",
+        "optionUrl": "",
+        "const": ""
+    },
+    "ruleContent": {
+        "contentList": "",
+        "content": "@jumpUrl",
+        "nextContentUrl": ""
+    }
+  },
+  {
+    "bookSourceName": "大佬收藏",
+    "bookSourceUrl": "https://bscdn.huolient.com/",
+    "bookListType": 1,
+    "ruleBookInfoTheme":{"hideBarImg":true,"hideIcon":true,"showNormalPic":true,"hideDebug":true,"bar-title":"#fff","bar-BG":"#e03021","list-BG":"#f1f1f1","name":"#000000DF","intro":"#00000080","lastChapter":"#ffffff","lastChapter-border":"#333"},
+    "exploreUrl": "[{\"title\": \"最新订阅\",\"url\": \"?s=getList&t=5&p={{if(!source.p){source.p=true;document.styleSheets[0].addRule('.normalpic','height: 46px !important;border-radius:24px !important');}page}}\",\"style\": {\"layout_flexGrow\": 2, \"layout_flexBasisPercent\": 2}}]",
+    "ruleExplore": {
+        "bookList": "$.data.list[*]",
+        "name": "@js:'{{$.channel_name}}'.replace(/&#(\\d+);/g,function(m,d){return String.fromCharCode(d);});",
+        "bookUrl": "?s=getList&t=6&p={{$.channel_id}}",
+        "intro": "$.time",
+        "author": "",
+        "wordCount": "",
+        "lastChapter": "",
+        "coverUrl": "$.channel_pic",
+        "kind": "",
+        "const": ""
+    },
+    "ruleToc": {
+        "chapterList": "$.data.video_list[*]",
+        "chapterName": "@js:let c='{{$.title}}'.replace(/&#(\\d+);/g,function(m,d){return String.fromCharCode(d);});'<img src=\"{{$.pic}}\" style=\"margin-bottom:-5px;margin-right:5px;height:20px;\">'+'【'+'{{$.length}}'+'】'+c;",
+        "chapterUrl": "@player:http://81.70.213.11/stream.php?video_id={{$.id}}&format_id=22",
+        "nextTocUrl": "@js:let c=chapter.resultJson.data;if(c.is_end==0){'?s=getNextList&channel_id='+c.params.channel_id+'&continuation='+c.params.continuation+'&itct='+c.params.itct+'&checksum='+c.params.checksum+'&page_cl='+c.params.page_cl}",
+        "optionList": "",
+        "optionName": "",
+        "optionUrl": "",
+        "const": ""
+    },
+    "ruleContent": {
+        "contentList": "",
+        "content": "@jumpUrl",
+        "nextContentUrl": ""
+    }
+  }
+]

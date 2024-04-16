@@ -1,0 +1,49 @@
+[ 
+  {
+    "bookSourceGroup": "TV",
+    "bookSourceName": "韩舞吧",
+    "bookSourceUrl": "https://www.hanwuba.xyz/",
+    "bookListType": 2,
+    "searchUrl": "index.php/vod/search/page/{{page}}/wd/{{key}}.html",
+    "exploreUrl": "[{\"title\": \"全部\",\"url\": \"index.php/vod/type/id/4/page/{{page}}.html\",\"style\": {\"layout_flexGrow\": 2, \"layout_flexBasisPercent\": 1}},{\"title\": \"AfreecaTV频道\",\"url\": \"index.php/vod/type/id/1/page/{{page}}.html\",\"style\": {\"layout_flexGrow\": 2, \"layout_flexBasisPercent\": 3}},{\"title\": \"国产频道\",\"url\": \"index.php/vod/type/id/2/page/{{page}}.html\",\"style\": {\"layout_flexGrow\": 2, \"layout_flexBasisPercent\": 3}},{\"title\": \"flexTV频道\",\"url\": \"index.php/vod/type/id/52/page/{{page}}.html\",\"style\": {\"layout_flexGrow\": 2, \"layout_flexBasisPercent\": 3}},{\"title\": \"pandaTV频道\",\"url\": \"index.php/vod/type/id/143/page/{{page}}.html\",\"style\": {\"layout_flexGrow\": 2, \"layout_flexBasisPercent\": 3}},{\"title\": \"popkontv频道\",\"url\": \"index.php/vod/type/id/200/page/{{page}}.html\",\"style\": {\"layout_flexGrow\": 2, \"layout_flexBasisPercent\": 3}},{\"title\": \"twitchTV频道\",\"url\": \"index.php/vod/type/id/229/page/{{page}}.html\",\"style\": {\"layout_flexGrow\": 2, \"layout_flexBasisPercent\": 3}},{\"title\": \"ST站频道\",\"url\": \"index.php/vod/type/id/145/page/{{page}}.html\",\"style\": {\"layout_flexGrow\": 2, \"layout_flexBasisPercent\": 3}},{\"title\": \"半糖频道\",\"url\": \"index.php/vod/type/id/204/page/{{page}}.html\",\"style\": {\"layout_flexGrow\": 2, \"layout_flexBasisPercent\": 3}},{\"title\": \"rosetv频道\",\"url\": \"index.php/vod/type/id/348/page/{{page}}.html\",\"style\": {\"layout_flexGrow\": 2, \"layout_flexBasisPercent\": 3}}]",
+    "ruleExplore": {
+        "bookList": ".tx-column-m-2.mb20 li",
+        "name": "h2 a",
+        "bookUrl": "http://sz.qq.com{{h2 a@href}}",
+        "intro": "span.0",
+        "author": "",
+        "wordCount": "",
+        "lastChapter": "",
+        "coverUrl": "img@src",
+        "kind": "span.1",
+        "const": ""
+    },
+    "ruleToc": {
+        "chapterList": "$.data[*]",
+        "chapterName": "$.title",
+        "chapterUrl": "@player:{{$.url}}",
+        "nextTocUrl": "",
+        "optionList": "",
+        "optionName": "",
+        "optionUrl": "",
+        "const": ""
+    },
+    "ruleContent": {
+        "contentList": "",
+        "content": "@jumpUrl",
+        "nextContentUrl": ""
+    },
+    "ruleSearch": {
+        "bookList": "",
+        "name": "",
+        "bookUrl": "",
+        "intro": "",
+        "author": "",
+        "wordCount": "",
+        "lastChapter": "",
+        "coverUrl": "",
+        "kind": "",
+        "const": ""
+    }
+  }
+]

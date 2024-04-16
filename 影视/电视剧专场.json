@@ -1,0 +1,39 @@
+[ { "RuleInfoTitle":"电视剧专场"},
+  {
+    "bookSourceName": "电视剧专场",
+    "listStyle":"imgStyle",
+    "bookListType": 3,
+    "bookSourceUrl": "http://cq.qq.com/",
+    "searchUrl": "?t=search&k={{key}}&n={{(source.n!=key)?(source.n=key,'1'):(source.p)}}",
+    "ruleBookInfoTheme":{"hideDebug":true,"bar-BG":"#0f0f0f","bar-title":"#dee4e9","list-BG":"#0f0f0f","list":"linear-gradient(to bottom, #222222 80%, #2f2f2f)","name":"#d8d8d8","intro":"#81868e","lastChapter-border":"linear-gradient(270deg,#40b4fe,#3b63f5)","lastChapter":"#fff","wordCount":"#ff710b"},
+    "ruleTheme":{"hideGroup":true,"bar-BG":"#171717","bar-title":" #dee4e9","list-BG":"#0f0f0f"},
+    "exploreUrl": "[{'title':'2023年高分电视剧','url':'?t=getVodList&v=68&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEB3f9b10671d3b6763d29d05e1acf579ff?method=download&shareKey=354671a0a4846d109d9423e140dd65ce'},{'title':'爱优腾芒','url':'?t=getVodList&v=2&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEB2ab50c3e62e98c4c9faa6109d92e9eda?method=download&shareKey=354671a0a4846d109d9423e140dd65ce'},{'title':'经典港剧','url':'?t=getVodList&v=9&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEB34e68e7cc4470a32b17705e42a024707?method=download&shareKey=354671a0a4846d109d9423e140dd65ce'},{'title':'美剧热播','url':'?t=getVodList&v=10&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEB4c0578967e3fa7cbc96d9f4f11493772?method=download&shareKey=354671a0a4846d109d9423e140dd65ce'},{'title':'热播日剧','url':'?t=getVodList&v=72&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEBcd9ce01a204ffb4e070a02728e24de64?method=download&shareKey=354671a0a4846d109d9423e140dd65ce'},{'title':'经典美剧','url':'?t=getVodList&v=56&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEBdcd0a297817753b2f8741685d740a5d3?method=download&shareKey=354671a0a4846d109d9423e140dd65ce'}]",
+    "ruleExplore": {
+        "bookList": "@js:if(book.resultJson.data.nextVal){source.p=book.resultJson.data.nextVal}book.resultJson.data.items",
+        "name": "$.vodName",
+        "bookUrl": "?t=detail&v={{$.vodId}}",
+        "intro": "$.flags",
+        "author": "",
+        "wordCount": "@js:let c={{$.score}};if(parseInt(c)){''+c}else{''}",
+        "lastChapter": "@js:$.iconList.length>0?$.iconList[0].iconText:''",
+        "coverUrl": "$.coverImg",
+        "kind": "",
+        "const": ""
+    },
+    "ruleToc": {
+      "chapterList": "@js:let f,c,d=chapter.resultJson.data.vodName+' ',p=[];chapter.resultJson.data.playerList.map(function(e,i){f=i % 2 === 0?{bg:'#b24e4e52',co:'#dd524dd6'}:{bg:'#0d83ca52',co:'#0d83cad6'};if(e.playerName.includes('一起看')){f.bg='linear-gradient(233deg,#e2bc81,#c8944e)';f.co='#ffffffe6';}e.playerName=e.playerName.replace('一起看APP','默认高速');c=chapter.resultJson.data.playerList.length>1?'<font style=\"margin-left:1em;color:'+f.co+';font-size:12px;padding:4px 8px;background:'+f.bg+';border-radius:4px\">'+e.playerName+'</font>':'';e.epList.map(function(i){p.push({u:i.epId,n:d+i.epName+c});});if(e.epList.length>200){chapter.resultJson.data.playerList.splice(1)}});p;",
+      "chapterName": "$.n",
+      "chapterUrl": "?t=getPlayUrl&e={{$.u}}",
+      "nextTocUrl": "",
+      "optionList": "",
+      "optionName": "",
+      "optionUrl": "",
+      "const": ""
+    },
+    "ruleContent": {
+        "contentList": "",
+        "content": "@player:{{$.data}}",
+        "nextContentUrl": ""
+    }
+  }
+]

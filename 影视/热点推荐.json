@@ -1,0 +1,41 @@
+[ { "RuleInfoTitle":"热点推荐",
+    "RuleInfoPic":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAABPBJREFUeF7dm81SE0EQx2fDC2DBES0SfQE5KFU5CPgAWOaCcpCUXMGLokarIFUaNXoRrljkgnIJJQ8AxANVeokvIEmKjxspeACTtXpNpzbDzu5kpmc3sCc+Zmenf9P/7p7ZWYtFcA0kMmuMsRnu0TUrFkuf/HlTCnNIVpgPG0xklmzGFn2fadulhm2nz2rva2GMLRQAA9czM8x2DB+WNcpiLPu32SyYBmEUwOCN12N2o7HILGtM1nBeFsxi2fp+rqB4f+BtRgD0D78Y7rOsNQ3DOwduUBbkAAQBLnAmJBsUGs1mllIWZABaOofobv6yWLrRaJYoQGgDINC5GjDbLll9fVndtKkMIDLDz+PSkoUSAMM6V/MIRVl0BUCqkFEbPs1dCrKQAqBSyNBYpNhLF2nTF0AP6VyNhIQsPAGQFzJqw6e6y3eRdQ6AY3wsVqV6es/0I5BFB4BLazzOggeEDgA9H+UJ3AlWmSeV3BJ21QEgivx+begKm0qNsKn7N9nInU8EJgZ0YdulevXduDeA+MtdshWchCkLT+6yhfkJp2V+eYflP29L3KXdpFav5OKRAoBZX/mQYsnR9jjY4PVX2pZJdhAtAC/jQ5x9YBQtgK312Y6ZhxGB9g+OTiUnULtZdADcmneb4XZ/8BC4DAKJBkDydpxtfZ09N33fimU2t1Bs/x0AfF9/zDY2f5sKitEAWMmn2IPUSCAAaFD+8ZQBCPACA6kxGgAn+289xct7ADRyxwkDEMIHIHJ/1Do/y3yg9IKkEQrDAQDuvver6rgx/AwSEF2TD1edtnihBPB36APihLuNGQCJDIxC+u2NaBCgXzACDQsC4DYQ7+X73vtZZZPTqxp2t2/18QAiAOjCWOD4ScA9yzDD0BZTIW8t7ymKNMwCcBuLAUw0q90aQFIx+i6GCDyAT3fgunPPi05uF82sLAiSjGAaAB/AZI2TbaddNpsEIKN1WUNlM0bX/ZkE4BXtsaZ31/huKcD/D4/O2gskrzWAu712HDAJwGuxA0XMRrHcXgfAwgeyxNWhfnZv+kvHBGLqPDw+c+oHMBy8yl1DXBoAG5tlx0hYIGEdkBxNODtEmPO9ymcoiACq8mXSA7xigKjWh8zwbH6ivUDCFSHM9oUF4JXvRRLIL28znHGYTYjusDka5AE9nQX4lRz8LgJwcHzKPi7vOEbDBRuiWEGKPCCMOsBW1lbrRj4TgDFgLO4FgKuD6+N6HzY+4IJtcXemgL/jjjGOiaQUDogB2gBgsKLNDx24ZIuhMAB47fzqGE+8HC7UK7k0jod/M0TiAdA57u1R1P+EewEwtHAAIASM7CoegAsp4h3i8ACg0d1Kgtjlefa+AEh2hESzjS9Ck7fiTimMmQDaw2YIlMCm3w/23NthFWno3OMLoHVAYpdiX1BnkCbvrVdyHYFfdETmUkKwYrFx/mSp8JRY67TIo0vhDT7nB32PybUkAR868J+3mPRSyr4DP8OROijpnBdsNuEkuPY7A0rrfPuyWFrmQwspAPigCyKLjjwfBLwrANBZD8tC6dR41wDa3tArslA4IO32CmUA2EmkB6klde4nA20AbRD/P4aEr8OMB0q+mgvSeSgA4CEhnC5X0nloAIzJQlPnoQMglEVgIaPj/nAvWQwQDURZFgQBTgaOcQAKabOrQkbGyMgk4PVgYTVpUOd+AP4Bxv91bpmSGkEAAAAASUVORK5CYII="
+  },
+  {
+    "bookSourceName": "热点推荐",
+    "listStyle":"imgStyle",
+    "bookListType": 3,
+    "bookSourceUrl": "http://cq.qq.com/",
+    "searchUrl": "?t=search&k={{key}}&n={{(source.n!=key)?(source.n=key,'1'):(source.p)}}",
+    "ruleBookInfoTheme":{"hideDebug":true,"bar-BG":"#0f0f0f","bar-title":"#dee4e9","list-BG":"#0f0f0f","list":"linear-gradient(to bottom, #222222 80%, #2f2f2f)","name":"#d8d8d8","intro":"#81868e","lastChapter-border":"linear-gradient(270deg,#40b4fe,#3b63f5)","lastChapter":"#fff","wordCount":"#ff710b"},
+    "ruleTheme":{"hideGroup":true,"bar-BG":"#171717","bar-title":" #dee4e9","list-BG":"#0f0f0f"},
+    "exploreUrl": "[{'title': '爱优腾芒','url': '?t=getVodList&v=2&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEB6d19dc3df81ec58399e389e713764f5c?method=download&shareKey=5e7f4fd9c3fcca8bfc25de2d70e2700f'},{'title': '下饭短剧','url': '?t=getVodList&v=20&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEB60c5d94454d75c92e562d77996412ee4?method=download&shareKey=5e7f4fd9c3fcca8bfc25de2d70e2700f'},{'title': 'Netflix精选','url': '?t=getVodList&v=5&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEB6d0d64019067b4eb9159b773ff7da428?method=download&shareKey=5e7f4fd9c3fcca8bfc25de2d70e2700f'},{'title': '美剧热播','url': '?t=getVodList&v=10&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEBa6f0213a7ad00d8fe8602a7675022887?method=download&shareKey=5e7f4fd9c3fcca8bfc25de2d70e2700f'},{'title': '网络电影','url': '?t=getVodList&v=58&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEBe61b6ec148957e285619198810822ed9?method=download&shareKey=5e7f4fd9c3fcca8bfc25de2d70e2700f'},{'title': '爆笑喜剧','url': '?t=getVodList&v=52&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEBe1c1caedf69f48e5b884f7e579135c5c?method=download&shareKey=5e7f4fd9c3fcca8bfc25de2d70e2700f'},{'title': '拳拳到肉','url': '?t=getVodList&v=7&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEB2cf209b673d5257efcbbc5b2d726a7e6?method=download&shareKey=5e7f4fd9c3fcca8bfc25de2d70e2700f'},{'title': '胆小勿入','url': '?t=getVodList&v=6&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEB6b1601886406e8367ad7a12114c79dbd?method=download&shareKey=5e7f4fd9c3fcca8bfc25de2d70e2700f'},{'title': '刺激战场','url': '?t=getVodList&v=70&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEB4c4fd03d9f4354c6608d69da1540ab11?method=download&shareKey=5e7f4fd9c3fcca8bfc25de2d70e2700f'},{'title': '悬疑剧场','url': '?t=getVodList&v=19&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEBf249428494ae687f6a9bfb404522dd45?method=download&shareKey=5e7f4fd9c3fcca8bfc25de2d70e2700f'},{'title': '情投意合','url': '?t=getVodList&v=53&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEB34369e198a68f6d518d275611f0ed2f8?method=download&shareKey=5e7f4fd9c3fcca8bfc25de2d70e2700f'},{'title': '男人减速带','url': '?t=getVodList&v=45&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEB6b76721af59e7f96b451007105693b13?method=download&shareKey=5e7f4fd9c3fcca8bfc25de2d70e2700f'},{'title': '热播日剧','url': '?t=getVodList&v=72&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEB60291751bb1ec102c2cb76a2c806a472?method=download&shareKey=5e7f4fd9c3fcca8bfc25de2d70e2700f'},{'title': '近十年韩国高分电影','url': '?t=getVodList&v=48&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEBc89944f909ba64acdc66a5f53a04e904?method=download&shareKey=5e7f4fd9c3fcca8bfc25de2d70e2700f'}]",
+    "ruleExplore": {
+        "bookList": "@js:if(book.resultJson.data.nextVal){source.p=book.resultJson.data.nextVal}book.resultJson.data.items",
+        "name": "$.vodName",
+        "bookUrl": "?t=detail&v={{$.vodId}}",
+        "intro": "$.flags",
+        "author": "",
+        "wordCount": "@js:let c={{$.score}};if(parseInt(c)){''+c}else{''}",
+        "lastChapter": "@js:$.iconList.length>0?$.iconList[0].iconText:''",
+        "coverUrl": "$.coverImg",
+        "kind": "",
+        "const": ""
+    },
+    "ruleToc": {
+      "chapterList": "@js:let f,c,d=chapter.resultJson.data.vodName+' ',p=[];chapter.resultJson.data.playerList.map(function(e,i){f=i % 2 === 0?{bg:'#b24e4e52',co:'#dd524dd6'}:{bg:'#0d83ca52',co:'#0d83cad6'};if(e.playerName.includes('一起看')){f.bg='linear-gradient(233deg,#e2bc81,#c8944e)';f.co='#ffffffe6';}e.playerName=e.playerName.replace('一起看APP','默认高速');c=chapter.resultJson.data.playerList.length>1?'<font style=\"margin-left:1em;color:'+f.co+';font-size:12px;padding:4px 8px;background:'+f.bg+';border-radius:4px\">'+e.playerName+'</font>':'';e.epList.map(function(i){p.push({u:i.epId,n:d+i.epName+c});});if(e.epList.length>200){chapter.resultJson.data.playerList.splice(1)}});p;",
+      "chapterName": "$.n",
+      "chapterUrl": "?t=getPlayUrl&e={{$.u}}",
+      "nextTocUrl": "",
+      "optionList": "",
+      "optionName": "",
+      "optionUrl": "",
+      "const": ""
+  },
+    "ruleContent": {
+        "contentList": "",
+        "content": "@player:{{$.data}}",
+        "nextContentUrl": ""
+    }
+  }
+]

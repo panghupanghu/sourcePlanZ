@@ -1,0 +1,39 @@
+[ { "RuleInfoTitle":"综艺专场"},
+  {
+    "bookSourceName": "综艺专场",
+    "listStyle":"imgStyle",
+    "bookListType": 3,
+    "bookSourceUrl": "http://cq.qq.com/",
+    "searchUrl": "?t=search&k={{key}}&n={{(source.n!=key)?(source.n=key,'1'):(source.p)}}",
+    "ruleBookInfoTheme":{"hideDebug":true,"bar-BG":"#0f0f0f","bar-title":"#dee4e9","list-BG":"#0f0f0f","list":"linear-gradient(to bottom, #222222 80%, #2f2f2f)","name":"#d8d8d8","intro":"#81868e","lastChapter-border":"linear-gradient(270deg,#40b4fe,#3b63f5)","lastChapter":"#fff","wordCount":"#ff710b"},
+    "ruleTheme":{"hideGroup":true,"bar-BG":"#171717","bar-title":" #dee4e9","list-BG":"#0f0f0f"},
+    "exploreUrl": "[{'title':'2023年高分综艺','url':'?t=getVodList&v=73&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEBe22c5e00f6f07b7199a9ecdb859fbde3?method=download&shareKey=0bc6b3e226d75af45a3b147fd0cd4286'},{'title':'综艺追不停','url':'?t=getVodList&v=16&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEB9bcc53e3e5133c384d6a428083f9b96c?method=download&shareKey=0bc6b3e226d75af45a3b147fd0cd4286'},{'title':'韩国综艺','url':'?t=getVodList&v=17&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEBea2b79243afaffcec98cc76789f6bd26?method=download&shareKey=0bc6b3e226d75af45a3b147fd0cd4286'},{'title':'日本综艺','url':'?t=getVodList&v=18&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEB1ae0df36678dd32a1a1b14c3e19a1d5d?method=download&shareKey=0bc6b3e226d75af45a3b147fd0cd4286'},{'title':'Netflix综艺 🔞','url':'?t=getVodList&v=28&p={{page}}','img':'https://note.youdao.com/yws/api/personal/file/WEBe9893af244e196567e632e5b3e8fa697?method=download&shareKey=0bc6b3e226d75af45a3b147fd0cd4286'}]",
+    "ruleExplore": {
+        "bookList": "@js:if(book.resultJson.data.nextVal){source.p=book.resultJson.data.nextVal}book.resultJson.data.items",
+        "name": "$.vodName",
+        "bookUrl": "?t=detail&v={{$.vodId}}",
+        "intro": "$.flags",
+        "author": "",
+        "wordCount": "@js:let c={{$.score}};if(parseInt(c)){''+c}else{''}",
+        "lastChapter": "@js:$.iconList.length>0?$.iconList[0].iconText:''",
+        "coverUrl": "$.coverImg",
+        "kind": "",
+        "const": ""
+    },
+    "ruleToc": {
+      "chapterList": "@js:let f,c,d=chapter.resultJson.data.vodName+' ',p=[];chapter.resultJson.data.playerList.map(function(e,i){f=i % 2 === 0?{bg:'#b24e4e52',co:'#dd524dd6'}:{bg:'#0d83ca52',co:'#0d83cad6'};if(e.playerName.includes('一起看')){f.bg='linear-gradient(233deg,#e2bc81,#c8944e)';f.co='#ffffffe6';}e.playerName=e.playerName.replace('一起看APP','默认高速');c=chapter.resultJson.data.playerList.length>1?'<font style=\"margin-left:1em;color:'+f.co+';font-size:12px;padding:4px 8px;background:'+f.bg+';border-radius:4px\">'+e.playerName+'</font>':'';e.epList.map(function(i){p.push({u:i.epId,n:d+i.epName+c});});if(e.epList.length>200){chapter.resultJson.data.playerList.splice(1)}});p;",
+      "chapterName": "$.n",
+      "chapterUrl": "?t=getPlayUrl&e={{$.u}}",
+      "nextTocUrl": "",
+      "optionList": "",
+      "optionName": "",
+      "optionUrl": "",
+      "const": ""
+    },
+    "ruleContent": {
+        "contentList": "",
+        "content": "@player:{{$.data}}",
+        "nextContentUrl": ""
+    }
+  }
+]
